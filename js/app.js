@@ -192,6 +192,7 @@ if (son % 2 === 0) {
 // Output: alert("Nol emas!")
 
 let raqam = prompt("raqam yozing");
+
 raqam = Number(raqam);
 
 if (raqam === 0) {
@@ -610,8 +611,16 @@ if ((sir > 0 && sir < 10) || (sir > 100 && sir < 200)) {
 // Input: "", 20
 // Output: alert("Boshqa holat!")
 
-// AQLIM YETMADI JUDA QIYIN EKAN
+let ismm = prompt("Ismingizni kiriting:");
+let yoshsh = prompt("Yoshingizni kiriting:");
 
+yoshsh = Number(yoshsh);
+
+if (ism !== "" && yoshsh < 18) {
+  console.log("Yoshsin, " + ismm + "!");
+} else {
+  console.log("Boshqa holat!");
+}
 // ====================================
 // ============ 28-masala =============
 // ====================================
@@ -655,4 +664,29 @@ if (sozla.length > sozlama.length || sozla === "salom") {
   console.log("Birinchi so'z g'olib!");
 } else {
   console.log("Ikkichi so'z g'olib!");
+}
+
+// ====================================
+// ============ 30-masala =============
+// ====================================
+// ----Masala sharti-----
+// Foydalanuvchi prompt orqali yoshini, ismini va "ha" yoki "yo'q" deb javob kiritadi. Agar yosh 18 dan katta bo'lsa, ism bo'sh bo'lmasa va javob "ha" bo'lsa, "Siz superstarsiz, [ism]!" deb alert chiqaring, aks holda "Superstar emassiz!" deb alert chiqaring.
+
+// Tushuntirish
+// Superstar boвЂ™lish oson emas! рџЊџ && va ! bilan barcha shartlarni tekshiramiz. Bu eng qiyin masala, lekin siz buni uddalaysiz!
+
+// Input: 20, "Ali", "ha"
+// Output: alert("Siz superstarsiz, Ali!")
+// Input: 15, "Vali", "yo'q"
+// Output: alert("Superstar emassiz!")
+let yoosh = prompt("Yoshingiz:");
+let issm = prompt("Ismingiz:");
+let javvob = prompt("Siz rozimisiz? (ha/yo'q)");
+
+yoosh = Number(yoosh);
+
+if (yoosh > 18 && issm !== "" && javvob === "ha") {
+  console.log("Siz superstarsiz, " + ism + "!");
+} else {
+  console.log("Superstar emassiz!");
 }
